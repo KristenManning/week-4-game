@@ -28,33 +28,73 @@
 <!-- Logo -->
 <div class="row">
   <div class="col-md-12 logo">
-    <img width="50%" src="assets/images/zootopia.png">
+    <img width="35%" src="assets/images/zootopia.png">
     <div class="title"> 
     Role Playing Game
     </div>
   </div>
 </div>
 
+<hr>
+
+<!-- Instructions -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="instruct"> 
+    Click on a character to select your player 
+    </div>
+  </div>
+</div>
+
+<!-- Characters -->
 <div class="row">
 <!-- Margin left, 2col -->
   <div class="col-md-2">
   </div>
   <div class="col-md-2">
-    <img class="char" src="assets/images/judy.png">
+    <img class="char" data-charnum="0" id="judy" src="assets/images/judy.png">
   </div>
   <div class="col-md-2">
-    <img class="char" src="assets/images/nick.png">
+    <img class="char" data-charnum="1" src="assets/images/nick.png">
   </div>
   <div class="col-md-2">
-    <img class="char" src="assets/images/merry.png">
+    <img class="char" data-charnum="2"  src="assets/images/merry.png">
   </div>
   <div class="col-md-2" >
-    <img class="char" id="sloth" src="assets/images/sloth.png">
+    <img class="char" data-charnum="3" id="sloth" src="assets/images/sloth.png">
   </div>
 
   <div class="col-md-2">
   </div>
 </div>
+
+<hr>
+
+<!-- GAMEPLAY-->
+<div class="row">
+<!-- Margin left, 2col -->
+  <div class="col-md-2">
+  </div>
+<!-- Your Player -->
+  <div class="col-md-3">
+    <div class="your_player">
+    YOUR PLAYER 
+    </div>
+  </div>
+<!-- Gap -->
+  <div class="col-md-2">
+  <a href="#" class="btn btn-info" id="attack_btn">ATTACK</a>
+  </div>
+<!-- Opponent -->
+  <div class="col-md-3">
+    <div class="opponent"> 
+    OPPONENT
+    </div>
+  </div>
+
+
+</div>
+
 
 </body>
 </html>

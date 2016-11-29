@@ -6,22 +6,50 @@ $( document ).ready(function() {
 	//     this.counter= counter_power;
 	// }
 
-	// var char_list = ["judy", "nick", "merry", "sloth"]
+	var judy = {
+		health: 100, 
+		attack: 20, 
+		counter: 10, 
+	}
+	var nick = {
+		health: 90, 
+		attack: 20, 
+		counter: 10, 
+	}
+	var merry = {
+		health: 80, 
+		attack: 20, 
+		counter: 10, 
+	}
+	var sloth = {
+		health: 70, 
+		attack: 20, 
+		counter: 10, 
+	}
 
-	// alert("hi")
-	// for (c in char_list){
-	// 	var current_name = char_list[c]
-	// 	var current_name = new construct_player(5,3,4)
-	// }; 
+	var player = ""; 
 
-	// console.log(char_list)
-	// console.log(judy.health)
+	character_list = [judy, nick, merry, sloth];
+
+	// for (c in character_list) {
+	// 	var num1 = Math.random()*100 + 50
+	// 	var num2 = Math.random()*30 + 1
+	// 	var num3 = Math.random()*30 + 1
+		
+	// 	character_list[c] = new construct_player(num1, num2, num3)
+	// }
+
+		$(".char").on("click", function() {
+			player = character_list[$(this).data("charnum")]
+			console.log(this)
+			$(this).css('opacity', '0.15') 
+		});
+
+
+		// $(".char").on("click", function() {
+		// 	player = character_list[$(this).data("charnum")]
+		// });		
 
 
 
-
-	$(".char").on("click", function() {
-
-	   alert("yo")
-	});
 });

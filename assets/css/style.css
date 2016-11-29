@@ -1,27 +1,54 @@
 /*Colors*/
 /*Brown = #999080, Pale Orange = #CC880A, Dark Orange = #FF6505, Blue = #47FFD0, Green = #10CC67  */
-
+.row{
+	text-align: center;
+}
 .logo{
 	text-align: center;
-	margin: 20px;
-	font-size: 40px;
+	margin-top: 15px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #999080;
 }
 
 .title{
 	position: relative;
-	bottom: 20px;
-	left:45px;
+	bottom: 10px;
+	left:70px;
 }
 
 .char{
-	width: 85%;
+	width: 65%;
 	vertical-align: center; 
+	opacity: 1;
 }
 
+.instruct{
+	text-align: center;
+	color: #CC880A;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.opponent, .your_player{ 
+	text-align: center; 
+	font-size: 26px;
+	font-weight: bold;
+	color: white;
+	background-color: #CC880A;
+ }
 #sloth{
-	width:100%;
+	width:80%;
 	position: relative;
 	top: 70px;
+}
+
+#judy{
+	position: relative;
+	bottom: 25px;
+}
+
+#attack_btn{
+	font-weight: bolder;
+	font-size: 22px;
 }
