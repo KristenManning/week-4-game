@@ -1,0 +1,27 @@
+/*Colors*/
+/*Brown = #999080, Pale Orange = #CC880A, Dark Orange = #FF6505, Blue = #47FFD0, Green = #10CC67  */
+
+.logo{
+	text-align: center;
+	margin: 20px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #999080;
+}
+
+.title{
+	position: relative;
+	bottom: 20px;
+	left:45px;
+}
+
+.char{
+	width: 85%;
+	vertical-align: center; 
+}
+
+#sloth{
+	width:100%;
+	position: relative;
+	top: 70px;
+}
