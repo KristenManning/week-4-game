@@ -28,6 +28,7 @@ $( document ).ready(function() {
 	}
 
 	var player = ""; 
+	var opponent = "";
 
 	character_list = [judy, nick, merry, sloth];
 
@@ -39,10 +40,29 @@ $( document ).ready(function() {
 	// 	character_list[c] = new construct_player(num1, num2, num3)
 	// }
 
+	function select_player(clicked_img){
+		player = character_list[$(clicked_img).data("charnum")]
+		$(clicked_img).css('opacity', '0.15') 
+		$("#you").attr("src", clicked_img.src)
+
+
+	}
+
+	function select_opponent(clicked_img){
+		opponent = character_list[$(clicked_img).data("charnum")]
+		$("#opp").attr("src", clicked_img.src)
+
+
+	}
+
 		$(".char").on("click", function() {
-			player = character_list[$(this).data("charnum")]
-			console.log(this)
-			$(this).css('opacity', '0.15') 
+			if (player ==""){
+				select_player(this)
+			}else{
+				select_opponent(this)
+			}
+
+			
 		});
 
 
