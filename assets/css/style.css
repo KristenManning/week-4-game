@@ -53,6 +53,12 @@
 	color: #999080;
 }
 
+.notes{
+	color: #999080;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 #sloth{
 	width:80%;
 	position: relative;
@@ -80,15 +86,33 @@
 }
 
 .player_border{
-  -webkit-filter: drop-shadow(4px 3px 0  #47FFD0)
+	border-style: solid; 
+	border-width: 3px;
+	border-color:#47FFD0 ;
+/*  -webkit-filter: drop-shadow(4px 3px 0  #47FFD0)
                   drop-shadow(-4px -3px 0  #47FFD0);
   filter: drop-shadow(4px 3px 0  #47FFD0) 
-          drop-shadow(-4px -3px 0  #47FFD0);
+          drop-shadow(-4px -3px 0  #47FFD0);*/
 }
 
 .enemies_border{
-  -webkit-filter: drop-shadow(4px 3px 0  #FF6505)
+	border-style: solid;
+	border-width: 3px;
+	border-color:#FF6505 ;
+/*  -webkit-filter: drop-shadow(4px 3px 0  #FF6505)
                   drop-shadow(-3px -3px 0  #FF6505);
   filter: drop-shadow(4px 3px 0  #FF6505) 
-          drop-shadow(-3px -3px 0  #FF6505);
+          drop-shadow(-3px -3px 0  #FF6505);*/
+}
+
+#bottom{
+	position: absolute;
+	bottom: 0;
+	margin: 5px;
+	left: 15%;
+}
+
+#restart_btn{
+	font-size: 22px;
+	background-color: #999080;
 }
