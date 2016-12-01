@@ -18,15 +18,18 @@
 }
 
 .char{
-	width: 65%;
-	vertical-align: center; 
+	margin-top: 5%;
+	width: 60%;
 	opacity: 1;
 }
 
 .instruct{
 	text-align: center;
-	color: #CC880A;
+	color: white;
 	font-size: 30px;
+	line-height: 50px;
+	display: inline;
+	vertical-align: middle; 
 	margin-bottom: 10px;
 }
 
@@ -37,15 +40,29 @@
 	color: white;
 	background-color: #CC880A;
  }
+
+.charname{
+	margin: 10px;
+	font-size: 26px;
+	color: #10CC67;
+}
+
+.health0, .health1, .health2, .health3{
+	font-size: 24px; 
+	font-weight: bold; 
+	color: #999080;
+}
+
 #sloth{
 	width:80%;
 	position: relative;
-	top: 60px;
+	top: 45px;
 }
 
 #judy{
+	width: 55%;
 	position: relative;
-	bottom: 25px;
+	bottom: 10px;
 }
 
 #attack_btn{
@@ -56,4 +73,22 @@
 #you, #opp{
 	width: 45%;
 	vertical-align: center;
+}
+
+#instruct_row{
+	background-color: #FF6505;
+}
+
+.player_border{
+  -webkit-filter: drop-shadow(4px 3px 0  #47FFD0)
+                  drop-shadow(-4px -3px 0  #47FFD0);
+  filter: drop-shadow(4px 3px 0  #47FFD0) 
+          drop-shadow(-4px -3px 0  #47FFD0);
+}
+
+.enemies_border{
+  -webkit-filter: drop-shadow(4px 3px 0  #FF6505)
+                  drop-shadow(-3px -3px 0  #FF6505);
+  filter: drop-shadow(4px 3px 0  #FF6505) 
+          drop-shadow(-3px -3px 0  #FF6505);
 }

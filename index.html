@@ -35,18 +35,47 @@
   </div>
 </div>
 
-<hr>
-
 <!-- Instructions -->
-<div class="row">
+<div class="row" id="instruct_row">
   <div class="col-md-12">
     <div class="instruct"> 
-    Click on a character to select your player 
+    Click on any character to select your player 
     </div>
   </div>
 </div>
 
-<!-- Characters -->
+<!-- Character Names  -->
+
+<div class="row">
+<!-- Margin left, 2col -->
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-2">
+    <div class = "charname">
+    Judy 
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class = "charname">
+    Nick
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class = "charname">
+    Bellwether
+    </div>
+  </div>
+  <div class="col-md-2" >
+    <div class = "charname">
+    Flash 
+    </div>
+  </div>
+
+  <div class="col-md-2">
+  </div>
+</div>
+
+<!-- Character Images -->
 <div class="row">
 <!-- Margin left, 2col -->
   <div class="col-md-2">
@@ -61,7 +90,37 @@
     <img class="char" data-charnum="2"  src="assets/images/merry.png">
   </div>
   <div class="col-md-2" >
-    <img class="char" data-charnum="3" id="sloth" src="assets/images/sloth.png">
+    <img class="char border_blue" data-charnum="3" id="sloth" src="assets/images/sloth.png">
+  </div>
+
+  <div class="col-md-2">
+  </div>
+</div>
+
+<!-- Character Health -->
+<div class="row">
+<!-- Margin left, 2col -->
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-2">
+    <div class = "health0">
+    HP = 100
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class = "health1">
+    HP = 100
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class = "health2">
+    HP = 100
+    </div>
+  </div>
+  <div class="col-md-2" >
+    <div class = "health3">
+    HP = 100
+    </div>
   </div>
 
   <div class="col-md-2">
@@ -97,6 +156,11 @@
 
 </div>
 
+<!-- 
+
+    $(clicked_img).css('opacity', '0.15') 
+
+ -->
 
 </body>
 </html>
