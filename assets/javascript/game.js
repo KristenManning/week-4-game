@@ -67,7 +67,7 @@ $( document ).ready(function() {
 		if (player.num != $(clicked_img).data("charnum")){
 			opponent = character_list[$(clicked_img).data("charnum")]
 			$("#opp").attr("src", clicked_img.src)
-			$(".instruct").text("Click the attack button to attack " + opponent.name + "or select a different opponent");
+			$(".instruct").text("Click the attack button to attack " + opponent.name + " or select a different opponent");
 			$(".char").removeClass("enemies_border")
 			$(clicked_img).addClass("enemies_border")
 			$(".notes").html("")
@@ -126,6 +126,7 @@ $( document ).ready(function() {
 		$(".char").removeClass("enemies_border")
 		$(".char").removeClass("player_border")
 		$(".notes").html("")
+		$(".instruct").css("background-color", "#FF6505")
 	}
 
 	$(".char").on("click", function() {
