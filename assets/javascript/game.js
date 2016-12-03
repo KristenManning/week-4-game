@@ -67,7 +67,7 @@ $( document ).ready(function() {
 		if (player.num != $(clicked_img).data("charnum")){
 			opponent = character_list[$(clicked_img).data("charnum")]
 			$("#opp").attr("src", clicked_img.src)
-			$(".instruct").text("Click the attack button to attack " + opponent.name)
+			$(".instruct").text("Click the attack button to attack " + opponent.name + "or select a different opponent");
 			$(".char").removeClass("enemies_border")
 			$(clicked_img).addClass("enemies_border")
 			$(".notes").html("")
@@ -78,14 +78,14 @@ $( document ).ready(function() {
 		player = ""
 		opponent = ""
 		defeat_count = 0 
-			var judy = {
-		num: 0,
-		name: "Judy", 
-		base: Math.floor(Math.random()*15)+15, 
-		health: Math.floor(Math.random()*70)+90, 
-		attack: 0, 
-		counter: Math.floor(Math.random()*25)+20, 
-		}
+		judy = {
+			num: 0,
+			name: "Judy", 
+			base: Math.floor(Math.random()*15)+15, 
+			health: Math.floor(Math.random()*70)+90, 
+			attack: 0, 
+			counter: Math.floor(Math.random()*25)+20, 
+			}
 		$(".health0").html("HP = " + judy.health);
 
 		nick = {
@@ -118,6 +118,8 @@ $( document ).ready(function() {
 		}
 		$(".health3").html("HP = " + flash.health);
 
+		character_list = [judy, nick, bellwether, flash];
+
 		$(".instruct").text("Click on any character to select your player")
 		$("#opp").attr("src", "");
 		$("#you").attr("src", "");
@@ -146,6 +148,8 @@ $( document ).ready(function() {
 		}else{
 			// Player attacks opponent. Player's attack amount increases by base.
 			player.attack += player.base; 
+			console.log(player.attack)
+
 			// opponent's health is decreased by player's attack amount 
 			opponent.health -= player.attack;
 			$(".health"+opponent.num).html("HP = " + opponent.health);
